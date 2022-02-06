@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	pb "grpc-demo/api"
+	pb "grpc-demo-simple/api"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

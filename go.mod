@@ -1,4 +1,4 @@
-module grpc-demo
+module grpc-demo-simple
 
 go 1.17
 

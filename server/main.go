@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	pb "grpc-demo/api"
-	"grpc-demo/server/service"
+	pb "grpc-demo-simple/api"
+	"grpc-demo-simple/server/service"
 	"net"
 
 	"google.golang.org/grpc"
