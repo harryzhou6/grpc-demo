@@ -22,10 +22,11 @@ func main() {
 
 	// 初始化客户端
 	c := pb.NewHelloClient(conn)
-
-	//调用方法
+	// 调用方法
 	reqBody := new(pb.HelloRequest)
 	reqBody.Name = "Li Lei"
+	// 使用 gzip
+	//r, err := c.SayHello(context.Background(), reqBody, grpc.UseCompressor(gzip.Name))
 	r, err := c.SayHello(context.Background(), reqBody)
 	if err != nil {
 		fmt.Println(err)
